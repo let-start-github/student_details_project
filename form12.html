@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <h1>UNIVERSITY EXAMINATION 2023</h1>
+    <h3>MARKSHEET DETAILS</h3>
+    <form action="">
+        <label for="form1">Roll No</label>
+        <input type="number" id="form1" name="form1">
+<br>
+<br>
+        <label for="form2">Student Name</label>
+        <input type="text" id="form2" name="form2">
+<br>
+<br>
+        <label for="form3">Course</label>
+        <input type="text" id="form3" name="form3">
+<br>
+<br>
+        <label for="form4">Java</label>
+        <input type="number" id="form4" name="form4">
+        <br>
+        <br>
+        <label for="form5">Ooad</label>
+        <input type="number" id="form5" name="form5">
+        <br>
+        <br>
+        <label for="form6">Ada</label>
+        <input type="number" id="form6" name="form6">
+        <br>
+        <br>
+        <label for="form7">CN</label>
+        <input type="number" id="form7" name="form7">
+        <br><br>
+        <label for="form8">Iwp</label>
+        <input type="number" id="form8" name="form8">
+        <br><br>
+        <label for="form9">Total Mark</label>
+        <input type="number" id="form9" name="form9">
+        <br><br>
+        <label for="form10">Average</label>
+        <input type="number" id="form10" name="form10">
+        <br><br>
+        <label for="form11">Grade</label>
+        <input type="number" id="form11" name="form11">
+        <br><br>
+        <input type="button"value="Show Result" onclick="Student()">
+        <input type="button"value="Clear" onclick="Student()">
+
+    
+        
+    </form>
+</center>
+<script>
+    function Student()
+    {
+       var a=document.getElementById("form4").value;
+       var b=document.getElementById("form5").value;
+       var c=document.getElementById("form6").value;
+       var d=document.getElementById("form7").value;
+       var e=document.getElementById("form8").value;
+       total=a+b+c+d+e;
+let j=document.getElementById('form9');
+j.innerHTML=+"total";
+
+    }
+</script>
+</body>
+</html>

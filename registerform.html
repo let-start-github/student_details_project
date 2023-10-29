@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <title>registration form</title>
+    <style>
+        label{
+            font-weight: bold;
+            color:white;
+        }
+        body{
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+       }
+
+    </style>
+</head>
+<body background="img\register.jpg">
+    
+    
+
+    <!-- <div class="container p-5"> -->
+        <div class="container p-5" style="border-radius:20px;">
+            <div>
+                <h1 style="text-align:center; font-family:Georgia; color:cyan;">
+                    REGISTRATION FORM
+                </h1>
+            </div><br>
+            <form action="insert.php" method="post" class="container p-5"  enctype="multipart/form-data" style="border-radius:60px;">
+                <div class="form-group">
+                    <label for="name">USERNAME</label>
+                    <input type="text" name="username" id="name" class="form-control" placeholder="ENTER YOUR NAME" required>
+                </div><br>
+                <div class="form-group">
+                    <label for="f_name">FATHER NAME</label>
+                    <input type="text" name="father_name" id="f_name" class="form-control" placeholder="FATHER NAME" required>
+                </div><br>
+                <div class="form-group">
+                    <label for="m_name">MOTHER NAME</label>
+                    <input type="text" name="mother_name" id="m_name" class="form-control" placeholder="MOTHER NAME" required>
+                </div><br>
+                <div class="form-group">
+                    <label for="">AGE</label>
+                    <input type="number" name="age" id="age" class="form-control" placeholder="AGE" required>
+                </div><br>
+                <div class="form-group">
+                    <label for="">DATE OF BIRTH</label>
+                    <input type="date" name="dob" id="dob" class="form-control" required>
+                </div><br>
+                <div class="form-group">
+                    <label for="">EMAIL</label>
+                    <input type="email" name="email" id="" class="form-control" placeholder="abcd@gmail.com" required>
+                    <small style="color:green">we will never share your email....</small>
+                </div><br>
+                <div class="form-group">
+                    <label for="">PHONE NO</label>
+                    <input type="number" name="phone_no" id="" class="form-control" placeholder="PHONE NO" required>
+                    <small style="color:green">we will never share your phone no....</small>
+                </div><br>
+                <div class="form-group">
+                    <label for="">USER ID</label>
+                    <input type="text" name="user_id" id="user_id" class="form-control"  placeholder="abc1234" required>
+                    <small class="text-danger" id="user_error" style="display:none;">user name already exist...!</small>
+                   
+                </div><br>
+                <div class="form-group">
+                    <label for="">PASSWORD</label>
+                    <input type="text" name="password" id="" class="form-control" placeholder="password" required>
+                </div><br>
+                <div class="form-group">
+                    <label for="">GENDER</label>
+                    <input type="radio" name="gender" id="male" value="male" >
+                    <label for="male">male</label>
+                    <input type="radio" name="gender" id="female" value="female" >
+                    <label for="female">female</label>        
+
+                </div><br>
+                <div class="form-group">
+                    <label for="">SELECT YOUR STATE</label>
+                    <select name="state" id="">
+                        <option value="odisha">odisha</option>
+                        <option value="bihar">bihar</option>
+                        <option value="jhadkhand">jhadkhand</option>
+                        <option value="andhrapradesh">andhrapradesh</option>
+                        <option value="tamilnadu">tamilnadu</option>
+                        <option value="paschimbang">paschimbang</option>
+                    </select>
+                </div><br>
+                <div class="form-group">
+                    <label for="">SELECT YOUR DISTRICT</label>
+                    <select name="dist" id="">
+                        <option value="kendrapara">kendrapara</option>
+                        <option value="baleswar">baleswar</option>
+                        <option value="bhadrak">bhadrak</option>
+                        <option value="jajpur">jajpur</option>
+                        <option value="dhenkanal">dhenkanal</option>
+                        <option value="cuttack">cuttack</option>
+                    </select>
+                </div><br>
+                <div class="form-group">
+                    <label for="at">AT</label>
+                    <input type="text" name="at" id="at" class="form-control" placeholder="village" required>
+                </div><br>
+                <div class="form-group">
+                    <label for="po">PO</label>
+                    <input type="text" name="po" id="po" class="form-control" placeholder="post" required>
+                </div><br>
+                <div class="form-group">
+                    <label for="pin">PIN</label>
+                    <input type="text" name="pin" id="pin" class="form-control" placeholder="pin" required>
+                </div><br>
+                <!-- <div class="form-group">
+                    <label for="">SELECT YOUR FACILITY :</label>
+                    $my_sql="select * from facility_master";
+                    $my_obj= mysqli_query($conn,$my_sql);
+                   while( $my_array = mysqli_fetch_array($my_obj))
+                   {
+                    echo " <input type='checkbox' name='mycheck[]' value=".$my_array['facility_id']." id=''>";
+                    echo "<label for=''>".$my_array['facility_name']."</label>";
+                   }
+                </div><br> -->
+                <div class="form-group">
+                    <label for="po">PUT YOUR PROFILE PICTURE</label>
+                    <input type="file" name="fileToUpload" class="form-control" id="fileToUpload">
+                </div><br>
+                <div class="form-group">
+                    <button type="submit" name="submit" onclick="check()" class="btn btn-primary" value="submit">SUBMIT</button>
+                    
+                </div>
+                
+
+
+            </form>
+        </div>
+    <!-- </div> -->
+    <script>
+       
+        
+    </script>
+</body>
+</html>
